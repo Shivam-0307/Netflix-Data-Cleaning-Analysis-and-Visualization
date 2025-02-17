@@ -4,9 +4,8 @@
                     
 					select * from netflix1;
                     
-                    drop table netflix_cleaned;
-                   
 
+                   
 /*   STEP 1:- CLEAN THE DATA :---------
 
 1) CREATED A CLEAN TABLE CALLED netflix_cleaned:-----
