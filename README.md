@@ -8,7 +8,7 @@
 ##### ✅ Key Insights: Trends in Netflix releases, most common genres, and average movie durations.
 
 # Technologies Used:-
-##### • MySQL (Data Cleaning & Querying)
+##### • MySQL (Data Cleaning, Data Analyzing & Querying)
 ##### • Excel (Data Visualization)
 
 # Results & Insights:
