@@ -26,15 +26,15 @@ Solution: Convert the "date_added" column into a proper date format to ensure co
 					release_year,
 					rating,
 					-- Extract duration for movies
-					Coalesce(CASE 
+					         CASE 
 					              WHEN duration LIKE '%min' THEN CAST(SUBSTRING_INDEX(duration, ' ', 1) AS UNSIGNED)
 						       ELSE NULL 
-						  END, 0) AS duration_min,
+						  END AS duration_min,
 					-- Extract the number of seasons for TV shows
-					Coalesce(CASE 
+					         CASE 
 						        WHEN duration LIKE '%Season%' THEN CAST(SUBSTRING_INDEX(duration, ' ', 1) AS UNSIGNED)
 						        ELSE NULL 
-						 END, 0) AS num_seasons,
+						 END AS num_seasons,
 					listed_in
 				FROM netflix1;
 
